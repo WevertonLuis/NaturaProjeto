@@ -1,0 +1,132 @@
+/* Estilizando a seção principal */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 94vh;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+/* Estilizando a imagem */
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+/* Botões de seleção */
+.btn-check {
+    position: absolute;
+    opacity: 0;
+}
+
+.btn-check:checked + .btn-custom {
+    background-color: #007bff; /* Cor de fundo quando selecionado */
+    color: #fff; /* Cor do texto quando selecionado */
+    border-color: #007bff; /* Cor da borda quando selecionado */
+}
+
+/* Estilizando os botões */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Aumentado o espaçamento entre as linhas de botões */
+    margin-top: 20px;
+    position: relative;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Aumentado o espaçamento entre os botões */
+}
+
+.btn-row-first .btn-custom {
+    font-size: 1rem; /* Tamanho da fonte aumentado */
+    padding: 1rem 2rem; /* Espaçamento interno aumentado */
+    border-radius: 10px; /* Borda arredondada maior */
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-custom {
+    font-size: 0.9rem; /* Tamanho da fonte padrão */
+    border-radius: 15px; /* Borda arredondada padrão */
+    padding: 8px 12px; /* Espaçamento interno padrão */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid transparent; /* Borda transparente por padrão */
+}
+
+/* Botões cloud */
+.btn-cloud {
+    padding: 0.5rem 1rem; /* Espaçamento interno padrão */
+    color: #ffffff;
+    border-radius: 8px; /* Borda arredondada padrão */
+    font-size: 0.8rem; /* Tamanho da fonte padrão */
+    letter-spacing: 0.8px;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Estilo do rodapé */
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    position: static;
+}
+
+/* Ajuste de cores para os botões */
+.btn1 { background-color: #FF808B; }
+.btn2 { background-color: #F5821F; }
+.btn3 { background-color: #05705D; }
+.btn4 { background-color: #F6E58D; }
+.btn5 { background-color: #05705D; }
+.btn6 { background-color: #F6E58D; }
+.btn7 { background-color: #F5821F; }
+.btn8 { background-color: #F6E58D; }
+.btn9 { background-color: #FF808B; }
+.btn10 { background-color: #05705D; }
+.btn11 { background-color: #F6E58D; }
+.btn12 { background-color: #F5821F; }
+.btn13 { background-color: #F6E58D; }
+.btn14 { background-color: #FF808B; }
+
+/* Media Queries para dispositivos menores */
+@media (max-width: 768px) {
+    .btn-custom {
+        font-size: 0.8rem; /* Tamanho da fonte reduzido em telas menores */
+        padding: 6px 10px; /* Menos espaçamento interno em telas menores */
+    }
+
+    .btn-cloud {
+        padding: 0.4rem 0.8rem; /* Menos espaçamento interno em telas menores */
+        font-size: 0.7rem; /* Tamanho da fonte reduzido em telas menores */
+    }
+
+    .btn-row {
+        flex-direction: column; /* Empilha os botões verticalmente em telas menores */
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-container {
+        flex-direction: column; /* Empilha as linhas verticalmente em telas muito pequenas */
+    }
+
+    .btn-row {
+        flex-direction: column; /* Empilha os botões verticalmente em telas muito pequenas */
+    }
+}

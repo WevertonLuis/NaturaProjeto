@@ -1,0 +1,1091 @@
+/* CORPO */
+:root {
+    --color-light: #FEFCFB;
+    --color-orange: #F5821F;
+    --font-primary: "Rubik", sans-serif;
+}
+
+body {
+    background-color: var(--color-light) !important;
+    font-family: var(--font-primary) !important;
+    overflow-x: hidden;
+}
+
+.text-light {
+    color: var(--color-light) !important;
+}
+
+.text-orange {
+    color: var(--color-orange) !important;
+}
+
+.color-orange {
+    background-color: var(--color-orange);
+}
+
+.color-light {
+    background-color: var(--color-light);
+}
+
+.text-green {
+    color: #05705D;
+}
+/* CORPO */
+
+
+
+/* Nav bar */
+.logoHeader {
+    width: 8rem;
+    margin-left: 1rem !important;
+}
+
+.font-nav {
+    font-size: 1.1rem !important;
+}
+
+.perfil-icon {
+    font-size: 1.6rem !important;
+    display: block;
+}
+
+.text-red {
+    color: #DE2B2B;
+}
+
+.background-nav {
+    background-color: var(--color-light);
+}
+
+
+header {
+    width: 100%;
+    height: 10%;
+}
+
+.perfil {
+    display: none;
+}
+/* Fim navbar */
+
+
+/* TITULO E BOTOES */
+.btn-group .btn-check:checked + .btn {
+    background-color: var(--color-orange); 
+    color: white;
+    font-size: 1rem; 
+}
+
+.btn {
+    border-color: var(--color-orange);
+    color: var(--color-orange);
+}
+
+.btn:not(:disabled):not(.disabled):active,
+.btn:not(:disabled):not(.disabled).active,
+.show>.btn.dropdown-toggle {
+    color: white;
+    background-color: var(--color-orange);
+    border-color: var(--color-orange);
+}
+
+.tituloebotao {
+    font-size: 1.5rem; 
+    padding-left: 19.5rem;
+    padding-top: 3rem;
+    border-radius: o;
+}
+
+/* TITULO E BOTOES */
+
+/* CARROSSEL */
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+    justify-content: center;
+}
+
+.card-carousel {
+    margin: 2rem auto;
+    width: 26rem;
+    height: 10rem;
+    border-top: 3px solid #F5821F;
+    border-left: 3px solid #F5821F;
+    border-radius: 0.7rem;
+}
+
+.carousel-img {
+    border-radius: 0.5rem;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-image: none;
+}
+
+.carousel-control-next-icon::before, .carousel-control-prev-icon::before {
+    font-size: 2.1rem;
+    color: var(--color-orange);
+    margin-right: 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 40%; /* Ajuste o tamanho conforme necessário */
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.col-md-3 {
+    flex: 0 0 auto;
+    width: 23% !important;
+}
+
+.foto {
+    width: 5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+/* carrossel */
+
+/* Media Queries */
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .logoHeader {
+        width: 6rem;
+        margin-left: 0 !important;
+    }
+
+    .onda {
+        margin-top: -1.8rem;
+    }
+
+    .navbar-collapse {
+        padding: 1rem 1rem;
+        z-index: 1;
+        color: var(--color-orange);
+    }
+
+    .perfil-icon {
+        display: none;
+    }
+    
+    .perfil {
+        display: block;
+    }
+
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+
+    .col-md-3 {
+        width: 100% !important;
+    }
+
+    .card-carousel {
+        width: 20rem;
+        height: 11.5rem;
+    }
+
+
+    #carteira .carteira1 {
+        margin-top: 7rem;
+    }
+
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 5% !important;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+    .container-title {
+        margin-top: -5.5rem;
+    }
+
+    .perfil-icon {
+        display: none;
+    }
+
+    .navbar-collapse {
+        padding: 1rem 1rem;
+        z-index: 1;
+    }
+    
+    .perfil {
+        display: block;
+    }
+
+    .logoHeader {
+        width: 6rem;
+        margin-left: 0 !important;
+    }
+
+    .title { 
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .filtro {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+
+    .col-md-3 {
+        width: 100% !important;
+    }
+
+    .card-carousel {
+        width: 22rem;
+        height: 11rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 20% !important;
+    }
+
+    .dropdown-check {
+        display: inline !important;
+    } 
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+
+    .tituloebotao{
+        justify-content: left !important;
+        margin-right: 20rem;
+    }
+
+    .tituloebotao {
+        padding-left: 2.5rem;
+        padding-top: 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .logoHeader {
+        width: 7rem;
+    }
+
+    .carousel-inner .carteira-item1>div {
+        display: none;
+    }
+
+    .carousel-inner .carteira-item1>div:nth-child(1),
+    .carousel-inner .carteira-item1>div:nth-child(2) {
+        display: block;
+    }
+
+    .carousel-inner .carteira-item2>div {
+        display: none;
+    }
+
+    .carousel-inner .carteira-item2>div:nth-child(1),
+    .carousel-inner .carteira-item2>div:nth-child(2) {
+        display: block;
+    }
+
+    .col-md-3 {
+        width: 47% !important;
+    }
+
+    .card-carousel {
+        width: 22rem;
+        height: 11rem;
+    }
+
+    .dropdown-check {
+        display: none !important;
+    } 
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 3% !important;
+    }
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .logoHeader {
+        width: 7rem;
+    }
+
+    .font-nav {
+        font-size: 1rem !important;
+    }
+
+    .perfil-icon {
+        font-size: 1.6rem !important;
+    }
+
+    .carousel-inner .carteira-item1>div {
+        display: none;
+    }
+
+    .carousel-inner .carteira-item1>div:nth-child(1),
+    .carousel-inner .carteira-item1>div:nth-child(2) {
+        display: block;
+    }
+
+    .carousel-inner .carteira-item2>div {
+        display: none;
+    }
+
+    .carousel-inner .carteira-item2>div:nth-child(1),
+    .carousel-inner .carteira-item2>div:nth-child(2) {
+        display: block;
+    }
+
+    .card-carousel {
+        width: 22rem;
+        height: 11rem;
+    }
+
+    .col-md-3 {
+        width: 37% !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 22% !important;
+    }
+
+    .form-check {
+        flex-wrap: wrap;
+    }
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+
+    .tituloebotao {
+        padding-right: 10rem;
+        padding-top: 2.5rem;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .logoHeader {
+        width: 7rem;
+    }
+
+    .font-nav {
+        font-size: 1rem !important;
+    }
+
+    .perfil-icon {
+        font-size: 1.5rem !important;
+    }
+
+    .card-carousel {
+        width: 22rem;
+        height: 11rem;
+    }
+
+    .carousel-inner .carteira-item1>div:nth-child(1),
+    .carousel-inner .carteira-item1>div:nth-child(2),
+    .carousel-inner .carteira-item1>div:nth-child(3) {
+        display: block;
+    }
+
+    .carousel-inner .carteira-item2>div:nth-child(1),
+    .carousel-inner .carteira-item2>div:nth-child(2),
+    .carousel-inner .carteira-item2>div:nth-child(3) {
+        display: block;
+    }
+
+    .col-md-3 {
+        width: 30% !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 8% !important;
+    }
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+    .logoHeader {
+        width: 7rem;
+    }
+
+    .carousel-inner .carteira-item1>div:nth-child(1),
+    .carousel-inner .carteira-item1>div:nth-child(2),
+    .carousel-inner .carteira-item1>div:nth-child(3) {
+        display: block;
+    }
+
+    .carousel-inner .carteira-item2>div:nth-child(1),
+    .carousel-inner .carteira-item2>div:nth-child(2),
+    .carousel-inner .carteira-item2>div:nth-child(3) {
+        display: block;
+    }
+
+    .font-nav {
+        font-size: 1.1rem !important;
+    }
+
+    .perfil-icon {
+        font-size: 1.6rem !important;
+    }
+
+    .card-carousel {
+        width: 25rem;
+        height: 10.5rem;
+    }
+
+    .carousel-item{
+        gap: 5rem;
+    }
+
+    .col-md-3 {
+        width: 25% !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width:9% !important;
+    }
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+}
+
+/* Pequenos dispositivos (celulares em modo retrato, menos de 576px) */
+@media (max-width: 575.98px) {
+  
+
+
+}
+
+/* Dispositivos pequenos (celulares em modo retrato) */
+@media (max-width: 424px) {
+    .tituloebotao {
+        padding-left: 1rem;
+        padding-top: 1rem;
+        font-size: 1rem;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        justify-content: flex-start; /* Garante o alinhamento à esquerda */
+    }
+}
+
+/* Dispositivos pequenos (celulares em modo paisagem) */
+@media (min-width: 425px) and (max-width: 767px) {
+    .tituloebotao {
+        padding-left: 2rem;
+        padding-top: 1.5rem;
+        font-size: 1.1rem;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        justify-content: flex-start; /* Garante o alinhamento à esquerda */
+    }
+}
+
+/* Dispositivos médios (tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .tituloebotao {
+        padding-left: 3rem;
+        padding-top: 2rem;
+        font-size: 1.2rem;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        justify-content: flex-start; /* Garante o alinhamento à esquerda */
+    }
+}
+
+/* Dispositivos grandes (tablets grandes ou laptops pequenos) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .tituloebotao {
+        padding-left: 9.2rem;
+        padding-top: 2.5rem;
+        font-size: 1.3rem;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        justify-content: flex-start; /* Garante o alinhamento à esquerda */
+    }
+}
+
+/* Dispositivos extra grandes (laptops e desktops) */
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .tituloebotao {
+        padding-left: 6rem;
+        padding-top: 3rem;
+        font-size: 1.4rem;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        justify-content: flex-start; /* Garante o alinhamento à esquerda */
+    }
+}
+
+/* Dispositivos muito grandes (desktops grandes) */
+@media (min-width: 1401px) {
+    .tituloebotao {
+        padding-left: 7rem;
+        padding-top: 3.5rem;
+        font-size: 1.5rem;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        justify-content: flex-start; /* Garante o alinhamento à esquerda */
+    }
+}
+
+@media (min-width: 1600px) {
+    .tituloebotao {
+        padding-left: 19.5rem;
+        padding-top: 3.5rem;
+        font-size: 1.5rem;
+        text-align: left; 
+        justify-content: flex-start;
+    }
+}
+
+/* css parte 2 */
+
+:root {
+    --color-light: #FEFCFB;
+    --color-orange: #F5821F;
+    --font-primary: "Rubik", sans-serif;
+}
+
+body {
+    background-color: var(--color-light) !important;
+    font-family: var(--font-primary) !important;
+}
+
+.container-consulta {
+    flex-direction: row !important;
+}
+
+.text-orange {
+    color: var(--color-orange) !important;
+}
+
+.text-light {
+    color: var(--color-light) !important;
+}
+
+.color-orange {
+    background-color: var(--color-orange);
+}
+
+.color-light {
+    background-color: var(--color-light);
+}
+
+.img-consulta {
+    width: 27rem;
+}
+
+.consulta {
+    height: 29rem; 
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1; 
+    overflow-y: visible; 
+    overflow-x: hidden;
+}
+
+.consulta::-webkit-scrollbar {
+    width: 0.35rem; /* Largura da barra de rolagem */
+}
+
+.consulta::-webkit-scrollbar-thumb {
+    background-color: var(--color-orange); /* Cor da barra de rolagem */
+    border-radius: 10px; /* Arredondar a barra de rolagem */
+}
+
+.consulta::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor da trilha da barra de rolagem */
+    border-radius: 10px; /* Arredondar a trilha da barra de rolagem */
+}
+
+.foto {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.box {
+    width: 22rem;
+    height: 8rem;
+    border-color: var(--color-orange);
+    border-width: 0.2rem !important;
+    border-style: solid;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.fone, .local {
+    font-size: 0.75rem;
+    margin-left: 0.2rem;
+}
+
+.nometag {
+    font-size: 0.7rem;
+}
+
+.tag {
+    background-color: #FEE8E9;
+    width: 5rem;
+    height: 1.5rem;
+}
+
+.corpo {
+    padding-top: 5rem;
+}
+
+/* Título acima dos cartões */
+.cards-title {
+    font-size: 1.8rem;
+    font-weight: bold; 
+    margin-bottom: 1rem;
+    text-align: left !important; /* Força o alinhamento à esquerda */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.div-consulta {
+    text-align: left; /* Garante que o texto dentro da div também esteja alinhado à esquerda */
+}
+
+/* Container principal que mantém os cartões */
+.card-container {
+    width: 100%;
+    max-width: 60rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    height: 28rem;
+    gap: 1rem;
+}
+
+/* Cartões do lado esquerdo */
+.left-cards {
+    display: flex;
+    flex-direction: column;
+    width: 55rem; 
+    border-top: 4px solid var(--color-orange); 
+    border-radius: 10px;
+}
+
+/* Cartão do lado direito */
+.right-card {
+    width: 50%; 
+    display: flex;
+    align-items: stretch;
+    border-top: 4px solid var(--color-orange);
+    border-radius: 10px;
+}
+
+/* Cartões verticais à esquerda */
+.vertical-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-top: 4px solid var(--color-orange); 
+    border-radius: 10px;
+}
+
+/* Cartão horizontal à direita */
+.horizontal-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.todo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-task {
+    flex: 1;
+    padding: 0.5rem;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 2rem;
+}
+
+#add-task {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    line-height: 1;
+}
+
+#add-task:hover {
+    background-color: var(--color-orange);
+}
+
+/* Adiciona um limite de altura e rolagem vertical à lista de tarefas */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+    max-height: calc(1.5rem * 7 + 0.5rem * 6);
+    overflow-y: auto; 
+}
+
+/* Estilo para a barra de rolagem */
+.todo-list::-webkit-scrollbar {
+    width: 0.35rem; /* Largura da barra de rolagem */
+}
+
+/* Estilo para o "polegar" da barra de rolagem */
+.todo-list::-webkit-scrollbar-thumb {
+    background-color: var(--color-orange); /* Cor da barra de rolagem */
+    border-radius: 10px; /* Arredonda o "polegar" da barra de rolagem */
+}
+
+/* Estilo para a trilha da barra de rolagem */
+.todo-list::-webkit-scrollbar-track {
+    background: transparent; /* Torna o fundo da trilha invisível */
+    border-radius: 10px; /* Arredonda a trilha da barra de rolagem */
+}
+
+/* Estilo para os itens da lista */
+.todo-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem; /* Espaçamento entre as tarefas */
+    position: relative; /* Para posicionar o círculo ao lado */
+    padding-left: 2rem; /* Espaço para o círculo */
+    word-wrap: break-word; /* Quebra de linha para palavras longas */
+    overflow-wrap: break-word; /* Quebra de linha para palavras longas (alternativa) */
+}
+
+/* Estilo para o texto dentro do item da lista */
+.todo-list li span {
+    display: block; /* Faz com que o texto dentro de span quebre em múltiplas linhas */
+}
+
+/* Estilo para o contêiner de entrada e rótulo */
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+}
+
+/* Adiciona um limite de largura e quebra de linha aos itens da lista */
+.todo-list li {
+    max-width: 100%; /* Garante que o item da lista não exceda a largura do contêiner */
+    overflow: hidden; /* Oculta qualquer conteúdo que exceda o tamanho do item */
+}
+
+/* Estilo para o checkbox e o rótulo */
+.todo-list input[type="checkbox"] + .custom-checkbox {
+    margin-right: 0.5rem; /* Espaçamento entre o círculo e o texto */
+}
+
+
+/* Estilo para o círculo (substituindo a caixa de seleção) */
+.todo-list input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    opacity: 0; /* Oculta o checkbox padrão */
+    width: 1rem; /* Largura do círculo */
+    height: 1rem; /* Altura do círculo */
+    z-index: 1; /* Garante que o checkbox seja clicável */
+}
+
+/* Estilo para o círculo */
+.todo-list input[type="checkbox"] + .custom-checkbox {
+    position: absolute;
+    left: 0;
+    width: 1rem; /* Largura do círculo */
+    height: 1rem; /* Altura do círculo */
+    border-radius: 50%; /* Faz o círculo */
+    border: 2px solid #ccc; /* Borda do círculo */
+    background-color: var(--color-light); /* Cor de fundo do círculo */
+    cursor: pointer; /* Aponta que é clicável */
+    display: flex; /* Flexbox para centralizar o ícone */
+    align-items: center;
+    justify-content: center;
+    z-index: 0; /* Garante que o círculo fique atrás do checkbox */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Estilo para o círculo quando o checkbox está marcado */
+.todo-list input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: var(--color-orange); /* Cor do círculo quando marcado */
+    border-color: var(--color-orange); /* Atualiza a borda para corresponder ao fundo */
+}
+
+/* Adiciona o ícone de check quando o checkbox está marcado */
+.todo-list input[type="checkbox"]:checked + .custom-checkbox::after {
+    content: '\f00c'; /* Código Unicode do ícone de check do Font Awesome */
+    font-family: 'Font Awesome 5 Free'; /* Fonte do Font Awesome */
+    font-weight: 900; /* Peso da fonte para ícones sólidos */
+    color: var(--color-light); /* Cor do ícone */
+    font-size: 1rem; /* Tamanho do ícone */
+}
+
+/* Estilo para as tarefas riscadas quando o checkbox é marcado */
+.todo-list input[type="checkbox"]:checked + .custom-checkbox + label {
+    text-decoration: line-through; /* Adiciona o risco ao texto */
+    color: #888; /* Opcional: muda a cor do texto para cinza quando marcado */
+}
+
+/* Estilo para o botão de remover tarefa */
+.remove-task {
+    background: none;
+    border: none;
+    color: #d9534f;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.2s;
+}
+
+.remove-task:hover {
+    color: #c9302c;
+}
+/* css parte 2 */
+
+/* Media query 2 */
+
+@media (min-width: 375px) and (max-width: 768px) {
+     /* Define a altura máxima da lista de tarefas e adiciona rolagem quando necessário */
+     .todo-list {
+        max-height: calc(1.5rem * 5 + 0.5rem * 4); /* Calcula altura máxima para 5 itens, incluindo espaçamento entre itens */
+        overflow-y: auto; /* Adiciona rolagem vertical quando necessário */
+    }
+
+    /* Estilo da barra de rolagem para o card da lista */
+    .vertical-card::-webkit-scrollbar {
+        width: 0.35rem; /* Largura da barra de rolagem */
+    }
+
+    .vertical-card::-webkit-scrollbar-thumb {
+        background-color: var(--color-orange); /* Cor da barra de rolagem */
+        border-radius: 10px; /* Arredonda o "polegar" da barra de rolagem */
+    }
+
+    .vertical-card::-webkit-scrollbar-track {
+        background: transparent; /* Torna o fundo da trilha invisível */
+        border-radius: 10px; /* Arredonda a trilha da barra de rolagem */
+    }
+
+    .right-card {
+        width: 80%; /* Garante que o cartão horizontal ocupe toda a largura disponível */
+        height: 20rem; /* Altura fixa para o cartão direito */
+        flex: none; /* Impede que o cartão horizontal se estique ou encolha */
+    }
+
+    .vertical-card {
+        height: 50rem; /* Define uma altura fixa para o cartão vertical */
+        overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a altura do card */
+    }
+
+    .todo-list {
+        max-height: calc(1.5rem * 5 + 0.5rem * 4); /* Calcula altura máxima para 5 itens */
+        overflow-y: auto; /* Adiciona rolagem vertical quando necessário */
+    }
+    
+    .container-consulta {
+        flex-direction: column !important;
+    }
+
+    .div-consulta {
+        margin-top: 15rem;
+    }
+
+    .img-consulta {
+        width: 19rem !important;
+    }
+
+    .nome {
+        font-size: 0.9rem;
+    }
+
+    .box {
+        width: 17rem;
+        height: 6.8rem;
+    }
+
+    .form-check-input {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+        border-radius: 5rem !important;
+    }
+
+    .cards-title{
+        font-size: 1.8rem;
+        font-weight: bold; 
+        margin-bottom: 1rem;
+        text-align: center !important;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .foto {
+        width: 3.5rem;
+        margin-right: 0rem;
+    }
+
+    .fone, .local {
+        font-size: 0.6rem;
+    }
+    
+    .tag {
+        width: 4.5rem;
+    }
+
+    .nometag {
+        font-size: 0.7rem;
+    }
+
+    .vertical-card {
+        height: 20rem; /* Altura fixa para os cards verticais */
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5rem;
+    }
+
+    .left-cards, .right-card {
+        width: 80%;
+    }
+
+    .vertical-card, .horizontal-card {
+        margin-bottom: 1rem;
+        height: 20rem; /* Altura fixa para os cards em dispositivos móveis */
+        overflow: hidden; /* Garante que o conteúdo não ultrapasse o card */
+    }
+
+    .horizontal-card {
+        height: 20rem; /* Altura fixa para o card horizontal também */
+    }
+
+    /* Título responsivo */
+    .cards-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container-consulta {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .box {
+        width: 17rem;
+        height: 7rem;
+    }
+
+    .foto {
+        width: 4rem;
+        margin-right: 0rem;
+    }
+
+    .fone, .local {
+        font-size: 0.6rem;
+    }
+    
+    .tag {
+        width: 4.5rem;
+    }
+
+    .nometag {
+        font-size: 0.7rem;
+    }
+
+    .vertical-card {
+        height: 22rem; /* Altura fixa para os cards verticais */
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1280px) {
+    .box {
+        width: 17rem;
+        height: 7rem;
+    }
+
+    .foto {
+        width: 4rem;
+        margin-right: 0rem;
+    }
+
+    .fone, .local {
+        font-size: 0.6rem;
+    }
+    
+    .tag {
+        width: 4.5rem;
+    }
+
+    .nometag {
+        font-size: 0.7rem;
+    }
+
+    .vertical-card {
+        height: 24rem; /* Altura fixa para os cards verticais */
+    }
+}
+/* Media query 2 */
